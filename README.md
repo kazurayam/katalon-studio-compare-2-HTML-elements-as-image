@@ -16,4 +16,4 @@ The Test Case `TC1` does the following stuff.
 
 4. The Test Case will fail because the 2 images are significantly different.
 
-The `TC1` demonstrates how to use the AShot to compare 2 HTML elements. Taking this code as the starting point, you should be able to develop tests that meet any more complex conditions you want.
+The `TC1` demonstrates how to use the AShot to compare 2 HTML elements. Taking this code as the starting point, you should be able to develop tests that meet your complex conditions you want.
