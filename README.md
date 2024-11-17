@@ -4,7 +4,9 @@ This is a Katalon Studio project for demonstration purpose.
 
 This projects demostrates how to use the [AShot](https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot/1.5.4) library.
 
-You need to download the jar of AShot and save it into the `Drivers` folder of your Katalon project.
+You need to download the jar of AShot from
+- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot/1.5.4
+and save it into the `Drivers` folder of your Katalon project.
 
 The Test Case `TC1` does the following stuff.
 
