@@ -5,7 +5,9 @@ This is a Katalon Studio project for demonstration purpose.
 This projects demostrates how to use the [AShot](https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot/1.5.4) library.
 
 You need to download the jar of AShot from
+
 - https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot/1.5.4
+
 and save it into the `Drivers` folder of your Katalon project.
 
 The Test Case `TC1` does the following stuff.
@@ -21,6 +23,8 @@ The Test Case `TC1` does the following stuff.
 3. Use the AShot library to compare the 2 PNG files, generate a "diff image", write it into "out/diff.png". The "diff image" will look like this:
 
 ![diff](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/images/diff.png)
+
+Please find that the "different pixcels" are painted with color GRAY.
 
 4. The Test Case will fail because the 2 images are significantly different.
 
