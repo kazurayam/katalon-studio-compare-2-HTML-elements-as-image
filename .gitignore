@@ -1,20 +1,12 @@
 .gradle
-
-bin
-
-Reports
-
-Libs
-
-output
-
-!output/.gitkeep
-build
-
 .classpath
-
 .project
 .cache
+bin
+Libs
 
-Drivers
+build
+output
+!output/.gitkeep
 out
+Reports
