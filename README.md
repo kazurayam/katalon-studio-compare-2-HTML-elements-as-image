@@ -29,3 +29,13 @@ Please find that the "different pixcels" are painted with color GRAY.
 4. The Test Case will fail because the 2 images are significantly different.
 
 The `TC1` demonstrates how to use the AShot to compare 2 HTML elements. Please read the source code for more detail. Taking this code as the starting point, you should be able to develop tests that meet your complex conditions you want.
+
+## Comparing two overlaied images with intuitive slider controls
+
+Additionally, I tried a JavaScript library [Image Compare Viewer](https://image-compare-viewer.netlify.app/). This library enables rendering image comparison interactively. See
+
+- [index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/index.html)
+
+![index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/images/index.html.png)
+
+This presentation looks attractive for me.

@@ -4,10 +4,12 @@
    <name>test2</name>
    <tag></tag>
    <UUID>510fd506-dc58-4b7a-9892-bbfb76c34f0b</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>10.3.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/kazuakiurayama/katalon-workspace/katalon-studio-compare-2-HTML-elements-as-image/katalon-studio-compare-2-HTML-elements-as-image
-   .prj</projectFileLocation>
+   <projectFileLocation>/Users/kazuakiurayama/katalon-workspace/katalon-studio-compare-2-HTML-elements-as-image/katalon-studio-compare-2-HTML-elements-as-image.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
