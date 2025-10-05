@@ -23,15 +23,15 @@ import ru.yandex.qatools.ashot.comparison.ImageMarkupPolicy;
 double criteriaPercent = 10.0
 
 // the directory to write image files into
-Path outDir = Paths.get(RunConfiguration.getProjectDir()).resolve("out");
-if (Files.exists(outDir)) {
-	FileUtils.deleteDirectory(outDir.toFile())
+Path docsDir = Paths.get(RunConfiguration.getProjectDir()).resolve("docs");
+if (Files.exists(docsDir)) {
+	FileUtils.deleteDirectory(docsDir.toFile())
 }
-Files.createDirectories(outDir)
+Files.createDirectories(docsDir)
 
-Path diff = outDir.resolve("diff.png")
-Path img1 = outDir.resolve("img1.png")
-Path img4 = outDir.resolve("img4.png")
+Path diff = docsDir.resolve("images/diff.png")
+Path img1 = docsDir.resolve("images/img1.png")
+Path img4 = docsDir.resolve("images/img4.png")
 
 // Shall we start?
 WebUI.openBrowser('')
@@ -67,6 +67,8 @@ if (imageDiff.hasDiff()) {
 // done
 WebUI.closeBrowser()
 
+Path html = docsDir.resolve("compare.html")
+createHTML(img1, img4, html)
 
 /*
  * create a TestObject
@@ -107,3 +109,52 @@ Double calculateDiffRatioPercent(ImageDiff diff) {
 	return diffSize * 1.0D / area * 100;
 }
 
+def createHTML(Path before, Path after, Path html) {
+	StringBuilder sb = new StringBuilder()
+	sb.append("""<!DOCTYPE html>
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>Compare Images Viewer example</title>
+	<!-- https://image-compare-viewer.netlify.app/ -->
+    <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" />
+	<style>body { background-color: #ccc; #image-compare: width: 200px; height: 200px; margin:100px; }</style>
+</head>
+<body>
+	<!--
+    <header>
+		<nav>
+			<ul>
+				<li></li>
+			</ul>
+		</nav>
+	</header>
+    -->
+	<main>
+		<article>
+			<section>
+				<h2>Compare Image Viewer compares two overlaid images interactively with intuitive slider controls</h2>
+                <div id="image-compare">
+                    <img src="images/img1.png" alt="" />
+                    <img src="images/img4.png" alt="" />
+                </div>
+            </section>
+		</article>
+	</main>
+	<footer>
+	</footer>
+	<!-- https://image-compare-viewer.netlify.app/ -->
+	<script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+	<script>
+const element = document.getElementById("image-compare");
+const viewer = new ImageCompare(element).mount();
+
+    </script>
+</body>
+</html>
+	""")
+	html.text = sb.toString()
+}
