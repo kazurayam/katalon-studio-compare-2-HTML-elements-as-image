@@ -36,6 +36,6 @@ Additionally, I tried a JavaScript library [Image Compare Viewer](https://image-
 
 - [index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/index.html)
 
-![index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/index.html.png)
+![index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/images/index.html.png)
 
 This presentation looks attractive for me.
