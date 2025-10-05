@@ -34,8 +34,8 @@ The `TC1` demonstrates how to use the AShot to compare 2 HTML elements. Please r
 
 Additionally, I tried a JavaScript library [Image Compare Viewer](https://image-compare-viewer.netlify.app/). This library enables rendering image comparison interactively. See
 
-- [compare.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-Elements-as-image/compare.html)
+- [index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/index.html)
 
-![compare.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-Elements-as-image/images/compare.html.png)
+![index.html](https://kazurayam.github.io/katalon-studio-compare-2-HTML-elements-as-image/index.html.png)
 
 This presentation looks attractive for me.

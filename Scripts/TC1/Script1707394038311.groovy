@@ -37,7 +37,7 @@ Path img4 = docsDir.resolve("images/img4.png")
 WebUI.openBrowser('')
 WebUI.setViewPortSize(800, 600)
 
-// visit a URL 
+// visit a URL
 WebUI.navigateToUrl("https://kazurayam.github.io/myApple/page1.html")
 // take screenshot of an HTML element, write the PNG image into a file
 WebUI.takeElementScreenshot(img1.toString(), makeTestObject("img1", "//img[@id='apple']"))
@@ -67,7 +67,7 @@ if (imageDiff.hasDiff()) {
 // done
 WebUI.closeBrowser()
 
-Path html = docsDir.resolve("compare.html")
+Path html = docsDir.resolve("index.html")
 createHTML(img1, img4, html)
 
 /*
@@ -80,7 +80,7 @@ TestObject makeTestObject(String id, String xpath) {
 }
 
 /*
- * drive the AShot library to compare 2 image files to compare them 
+ * drive the AShot library to compare 2 image files to compare them
  * and make a diff image. will write the diff into the out file
  */
 ImageDiff makeDiff(Path png1, Path png2, Path out) {
